@@ -1,0 +1,44 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Top headlines from TechCrunch right </h4>
+                        <p class="card-category"> now</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        Author
+                                    </th>
+                                    <th>
+                                        Title
+                                    </th>
+                                    <th>
+                                        Description
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let article of articles">
+                                        <td>
+                                            {{article.author}}
+                                        </td>
+                                        <td>
+                                            {{article.title}}
+                                        </td>
+                                        <td>
+                                            {{article.description}}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
